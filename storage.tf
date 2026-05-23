@@ -43,6 +43,6 @@ resource "aws_s3_bucket_public_access_block" "uploads" {
 
 resource "aws_sqs_queue" "main" {
   name                       = "${var.project_name}-queue"
-  message_retention_seconds  = 86400   # 1 day
+  message_retention_seconds  = 86400 # 1 day
   visibility_timeout_seconds = 30
 }
